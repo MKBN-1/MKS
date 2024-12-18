@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Meldkamerspel - Voertuig Zoeken en Kopen
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.2.1
 // @author       MKBN
 // @license      Beerware 
 // @description  Controleer op specifiek voertuig_type_id in de kazerne en als deze ontbreekt koop deze dan met credits.
@@ -22,8 +22,12 @@
 
  Release Notes:
 
+ Versie: 1.2.1
+ Datum: 2024-12-18
+ - URL's aangepast
+ 
  Versie: 1.2
- Datum 2024-12-18
+ Datum: 2024-12-18
  - Upload en share op github
 
 UITLEG
