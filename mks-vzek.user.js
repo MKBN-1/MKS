@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Meldkamerspel - Voertuig Zoeken en Kopen
 // @namespace    http://tampermonkey.net/
-// @version      1.2.2
+// @version      1.2.3
 // @author       MKBN
 // @license      Beerware
 // @description  Controleer op specifiek voertuig_type_id in de kazerne en als deze ontbreekt koop deze dan met credits.
@@ -25,10 +25,11 @@
 
  Release Notes:
 
- Versie: 1.2.1 + 1.2.2
+ Versie: 1.2.1 + 1.2.2 + 1.2.3
  Datum: 2024-12-18
- - URL's aangepast
- - Userscript tag verplaatst naar boven.
+ - .1 URL's aangepast
+ - .2 Userscript tag verplaatst naar boven.
+ - .3 POST Url aangepast.
 
  Versie: 1.2
  Datum: 2024-12-18
@@ -129,7 +130,7 @@ UITLEG
     console.log(`Kazerne Naam: ${kazerneNaam}`);
 
     if (!vehicleExists) {
-        const postUrl = `https://www.meldkamerspel.com/buildings/${kazerneId}/vehicle/${kazerneId}/${targetVehicleTypeId}/credits?building=${kazerneId}`;
+        const postUrl = `/buildings/${kazerneId}/vehicle/${kazerneId}/${targetVehicleTypeId}/credits?building=${kazerneId}`;
 
         console.log(`Post URL: ${postUrl}`);
 
