@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.2.1
 // @author       MKBN
-// @license      Beerware 
+// @license      Beerware
 // @description  Controleer op specifiek voertuig_type_id in de kazerne en als deze ontbreekt koop deze dan met credits.
 // @homepage     https://github.com/MKBN-1/MKS_pub/
 // @homepageURL  https://github.com/MKBN-1/MKS_pub/
@@ -12,6 +12,9 @@
 // @updateURL    https://raw.githubusercontent.com/MKBN-1/MKS_pub/refs/heads/main/mks-vzek.user.js
 // @match        https://www.meldkamerspel.com/buildings/*
 // @grant        none
+
+// ==/UserScript==
+
 /*
  * -------------------------------------------------------------------------------
  * "THE BEER-WARE LICENSE" (Revision 42):
@@ -22,9 +25,10 @@
 
  Release Notes:
 
- Versie: 1.2.1
+ Versie: 1.2.1 + 1.2.2
  Datum: 2024-12-18
  - URL's aangepast
+ - Userscript tag verplaatst naar boven.
  
  Versie: 1.2
  Datum: 2024-12-18
@@ -62,7 +66,7 @@ UITLEG
  Vul de building_id in van de laatste kazerne
 */
 
-// ==/UserScript==
+
 
 (function() {
     'use strict';
