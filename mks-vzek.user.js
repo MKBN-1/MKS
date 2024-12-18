@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Meldkamerspel - Voertuig Zoeken en Kopen
 // @namespace    http://tampermonkey.net/
-// @version      1.2.3
+// @version      1.2.4
 // @author       MKBN
 // @license      Beerware
 // @description  Controleer op specifiek voertuig_type_id in de kazerne en als deze ontbreekt koop deze dan met credits.
@@ -10,7 +10,9 @@
 // @supportURL   https://github.com/MKBN-1/MKS_pub/issues
 // @downloadURL  https://raw.githubusercontent.com/MKBN-1/MKS_pub/refs/heads/main/mks-vzek.user.js
 // @updateURL    https://raw.githubusercontent.com/MKBN-1/MKS_pub/refs/heads/main/mks-vzek.user.js
+// @match        https://www.leitstellenspiel.de/buildings/*
 // @match        https://www.meldkamerspel.com/buildings/*
+// @match        https://www.missionchief-australia.com/buildings/*
 // @grant        none
 
 // ==/UserScript==
@@ -25,11 +27,12 @@
 
  Release Notes:
 
- Versie: 1.2.1 + 1.2.2 + 1.2.3
+ Versie: 1.2.1 + 1.2.2 + 1.2.3 + 1.2.4
  Datum: 2024-12-18
  - .1 URL's aangepast
  - .2 Userscript tag verplaatst naar boven.
  - .3 POST Url aangepast.
+ - .4 nextBuildingLink aangepast naar AU en DE en deze landen ook toegevoegd aan de @match
 
  Versie: 1.2
  Datum: 2024-12-18
@@ -161,7 +164,10 @@ UITLEG
             return; // Stop het script hier
         }
 
-        const nextBuildingLink = Array.from(document.querySelectorAll('a')).find(link => link.textContent.includes('Volgende gebouw'));
+        const nextBuildingLink = Array.from(document.querySelectorAll('a')).find(link => {
+        const text = link.textContent.toLowerCase();
+        return text.includes('volgende gebouw') || text.includes('next building') || text.includes('nächstes gebäude');
+        });
         if (nextBuildingLink) {
             nextBuildingLink.click();
         } else {
