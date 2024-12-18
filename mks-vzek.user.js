@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Meldkamerspel - Voertuig Zoeken en Kopen
 // @namespace    http://tampermonkey.net/
-// @version      1.2.4
+// @version      1.2.5
 // @author       MKBN
 // @license      Beerware
 // @description  Controleer op specifiek voertuig_type_id in de kazerne en als deze ontbreekt koop deze dan met credits.
@@ -27,12 +27,13 @@
 
  Release Notes:
 
- Versie: 1.2.1 + 1.2.2 + 1.2.3 + 1.2.4
+ Versie: 1.2.1 + 1.2.2 + 1.2.3 + 1.2.4 + 1.2.5
  Datum: 2024-12-18
  - .1 URL's aangepast
  - .2 Userscript tag verplaatst naar boven.
  - .3 POST Url aangepast.
  - .4 nextBuildingLink aangepast naar AU en DE en deze landen ook toegevoegd aan de @match
+ - .5 functie getKazerneNaam uitgezet 
 
  Versie: 1.2
  Datum: 2024-12-18
@@ -94,8 +95,10 @@ UITLEG
         return url.split('/').pop();
     }
 
-    // Functie om de kazerneNaam uit het <h1> element te halen
-    function getKazerneNaam() {
+ /*   
+ // Functie om de  uit het <h1> element te halen
+    
+    function get() {
         const h1Element = document.querySelector('h1[building_type="0"]');
         if (h1Element) {
             const fullName = h1Element.textContent.trim();
@@ -105,6 +108,7 @@ UITLEG
         console.error("Kazerne naam niet gevonden.");
         return "";
     }
+    */
     // Functie om te controleren of het voertuig met targetVehicleTypeId bestaat in de actieve tab
     function checkVehicleExists() {
         const vehicleRows = document.querySelectorAll('table tbody tr');
@@ -124,13 +128,13 @@ UITLEG
 
     // Hoofdproces
     const kazerneId = getKazerneId();
-    const kazerneNaam = getKazerneNaam();
+    //const  = get();
 
     const vehicleExists = checkVehicleExists();
 
-    // Log de kazerneId en kazerneNaam naar de console
+    // Log de kazerneId en  naar de console
     console.log(`Kazerne ID: ${kazerneId}`);
-    console.log(`Kazerne Naam: ${kazerneNaam}`);
+    //console.log(`Kazerne Naam: ${}`);
 
     if (!vehicleExists) {
         const postUrl = `/buildings/${kazerneId}/vehicle/${kazerneId}/${targetVehicleTypeId}/credits?building=${kazerneId}`;
