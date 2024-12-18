@@ -5,11 +5,11 @@
 // @author       MKBN
 // @license      Beerware 
 // @description  Controleer op specifiek voertuig_type_id in de kazerne en als deze ontbreekt koop deze dan met credits.
-// @homepage     https://github.com/MKBN-1/mks-mkbn/
-// @homepageURL  https://github.com/MKBN-1/mks-mkbn/
-// @supportURL   https://github.com/MKBN-1/mks-mkbn/issues
-// @downloadURL  https://raw.githubusercontent.com/MKBN-1/mks-mkbn/refs/heads/main/mks-vzek.user.js
-// @updateURL    https://raw.githubusercontent.com/MKBN-1/mks-mkbn/refs/heads/main/mks-vzek.user.js
+// @homepage     https://github.com/MKBN-1/MKS_pub/
+// @homepageURL  https://github.com/MKBN-1/MKS_pub/
+// @supportURL   https://github.com/MKBN-1/MKS_pub/issues
+// @downloadURL  https://raw.githubusercontent.com/MKBN-1/MKS_pub/refs/heads/main/mks-vzek.user.js
+// @updateURL    https://raw.githubusercontent.com/MKBN-1/MKS_pub/refs/heads/main/mks-vzek.user.js
 // @match        https://www.meldkamerspel.com/buildings/*
 // @grant        none
 /*
