@@ -29,7 +29,7 @@
  Datum: 2024-12-18
  - URL's aangepast
  - Userscript tag verplaatst naar boven.
- 
+
  Versie: 1.2
  Datum: 2024-12-18
  - Upload en share op github
@@ -74,7 +74,7 @@ UITLEG
     // HIER ONDER EERST DE VARIABELEN DEFINIEREN!!!
     // ZIE UITLEG
     // ********************************************
-    
+
     // Definieer hier het gewenste vehicle_type_id
     const targetVehicleTypeId = "88";
     // Definieer hier het laatste gebouw wat je gebouwd hebt om het script op tijd te laten stoppen
