@@ -11,6 +11,8 @@
 // @match        https://www.leitstellenspiel.de/*
 // @match        https://www.meldkamerspel.com/*
 // @match        https://www.missionchief-australia.com/*
+// @updateURL    https://github.com/MKBN-1/MKS_pub/raw/refs/heads/main/vehicle_data_overview.user.js
+// @downloadURL  https://github.com/MKBN-1/MKS_pub/raw/refs/heads/main/vehicle_data_overview.user.js
 // @grant        none
 // ==/UserScript==
 
