@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Meldkamerspel - Voertuig Zoeken en Kopen
 // @namespace    http://tampermonkey.net/
-// @version      1.2.5
+// @version      1.2.6
 // @author       MKBN
 // @license      Beerware
 // @description  Controleer op specifiek voertuig_type_id in de kazerne en als deze ontbreekt koop deze dan met credits.
@@ -51,6 +51,7 @@ UITLEG
  5 = Adembeschermingsvoertuig (AB)
  10 = Slangenwagen (SL)
  11 = Dienstbus Verkenningseenheid Brandweer (DB-VEB)
+ 16 = Ambulance
  18 = Hoogwerker (HW)
  19 = Hoofd Officier van Dienst - Brandweer (DA-HOD)
  20 = Dienstauto (4 personen) (DA)
@@ -59,6 +60,7 @@ UITLEG
  31 = Commandovoertuig (CO)
  34 = Watertankwagen (WT)
  56 = Dienstauto Voorlichter (DA-VL)
+ 60 = Dienstbus Biketeam (DB-Bike)
  62 = Tankautospuit-Hulpverlening (TS-HV)
  71 = Motorspuitaanhanger (MSA)
  72 = Dompelpompaanhangwagen (DPA)
@@ -81,9 +83,9 @@ UITLEG
     // ********************************************
 
     // Definieer hier het gewenste vehicle_type_id
-    const targetVehicleTypeId = "88";
+    const targetVehicleTypeId = "90";
     // Definieer hier het laatste gebouw wat je gebouwd hebt om het script op tijd te laten stoppen
-    const lastStop = "0123456";
+    const lastStop = "2453957";
 
     // **********************************************************************
     // TOT HIER EN NIET VERDER. HIER ONDER IETS WIJZIGEN IS OP EIGEN RISICO!!
