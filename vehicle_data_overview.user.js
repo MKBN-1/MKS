@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vehicle Data Overview
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Display vehicle data overview on the webpage
 // @author       MKBN
 // @license      Beerware
