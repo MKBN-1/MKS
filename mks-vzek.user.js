@@ -8,8 +8,8 @@
 // @homepage     https://github.com/MKBN-1/MKS_pub/
 // @homepageURL  https://github.com/MKBN-1/MKS_pub/
 // @supportURL   https://github.com/MKBN-1/MKS_pub/issues
-// @downloadURL  https://raw.githubusercontent.com/MKBN-1/MKS_pub/refs/heads/main/mks-vzek.user.js
-// @updateURL    https://raw.githubusercontent.com/MKBN-1/MKS_pub/refs/heads/main/mks-vzek.user.js
+// @downloadURL  https://github.com/MKBN-1/MKS_pub/raw/refs/heads/main/mks-vzek.user.js
+// @updateURL    https://github.com/MKBN-1/MKS_pub/raw/refs/heads/main/mks-vzek.user.js
 // @match        https://www.leitstellenspiel.de/buildings/*
 // @match        https://www.meldkamerspel.com/buildings/*
 // @match        https://www.missionchief-australia.com/buildings/*
